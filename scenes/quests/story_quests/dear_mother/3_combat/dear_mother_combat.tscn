@@ -1,7 +1,7 @@
 [gd_scene format=4 uid="uid://bv08t775g112c"]
 
 [ext_resource type="Script" uid="uid://pk3ucq7e2eah" path="res://scenes/game_logic/player_mode.gd" id="1_tcaov"]
-[ext_resource type="Script" uid="uid://ci3aibvrk6ak3" path="res://scenes/quests/story_quests/dear_mother/extra_scripts/dear_mother_combat.gd" id="1_wktfi"]
+[ext_resource type="Script" path="res://scenes/quests/story_quests/dear_mother/extra_scripts/dear_mother_combat.gd" id="1_wktfi"]
 [ext_resource type="Script" uid="uid://x1mxt6bmei2o" path="res://scenes/ui_elements/cinematic/cinematic.gd" id="2_gjwyc"]
 [ext_resource type="Resource" uid="uid://ddbaqxasxl1ja" path="res://scenes/quests/story_quests/dear_mother/3_combat/combat_components/dear_mother_combat.dialogue" id="3_y38hj"]
 [ext_resource type="Script" uid="uid://cp54mgi54nywo" path="res://scenes/game_logic/fill_game_logic.gd" id="4_5pxk7"]
@@ -10,7 +10,7 @@
 [ext_resource type="TileSet" uid="uid://p21ogy6vusy" path="res://scenes/quests/story_quests/dear_mother/tiles/dear_mother_elevation_2.tres" id="7_5y0h7"]
 [ext_resource type="PackedScene" uid="uid://iu2q66clupc6" path="res://scenes/game_elements/characters/player/player.tscn" id="8_4w22d"]
 [ext_resource type="SpriteFrames" uid="uid://bxcsm1hpdtyr1" path="res://scenes/quests/story_quests/dear_mother/extra_scenes/saori/saorisprites.tres" id="9_vk7ks"]
-[ext_resource type="Script" uid="uid://cmq7hj1cjds4s" path="res://scenes/quests/story_quests/dear_mother/extra_scripts/DetectorProyectiles.gd" id="10_3ve5y"]
+[ext_resource type="Script" path="res://scenes/quests/story_quests/dear_mother/extra_scripts/DetectorProyectiles.gd" id="10_3ve5y"]
 [ext_resource type="Script" uid="uid://dfj3625owet5p" path="res://scenes/game_elements/characters/enemies/throwing_enemy/components/throwing_enemy.gd" id="10_vk7ks"]
 [ext_resource type="SpriteFrames" uid="uid://bquxs513bkvys" path="res://scenes/quests/story_quests/dear_mother/extra_scenes/monstruo/monstruo.tres" id="11_vk7ks"]
 [ext_resource type="PackedScene" uid="uid://c40jksrxvp1g1" path="res://scenes/quests/story_quests/dear_mother/3_combat/combat_components/dear_mother_projectile.tscn" id="12_qgnua"]
