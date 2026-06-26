@@ -13,20 +13,22 @@ func convertir_a_jugador() -> void:
 		print("¡Error! No has asignado la ruta del Player jugable en el Inspector.")
 		return
 		
-	var escena_player = load(ruta_player_real)
+	var escena_player: PackedScene = load(ruta_player_real) as PackedScene
 	
 	if escena_player:
-		var nuevo_player = escena_player.instantiate()
+		var nuevo_player: Player = escena_player.instantiate() as Player
+		
+		nuevo_player.name = "Player" 
 		nuevo_player.global_position = global_position
 		
 		get_parent().add_child(nuevo_player)
 		
-		# Buscamos el nodo Camera2D dentro del nuevo jugador real
 		if nuevo_player.has_node("Camera2D"):
-			var nueva_camara: Camera2D = nuevo_player.get_node("Camera2D")
-			# Forzamos a Godot a usar esta nueva cámara
+			var nueva_camara: Camera2D = nuevo_player.get_node("Camera2D") as Camera2D
 			nueva_camara.make_current()
-			
 			nueva_camara.reset_smoothing()
+		
+		nuevo_player.set_physics_process(true)
+		nuevo_player.set_process_input(true)
 		
 		queue_free()

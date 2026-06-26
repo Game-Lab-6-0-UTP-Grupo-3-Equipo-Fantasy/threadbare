@@ -12,8 +12,16 @@ Saori: ¡! (¡Mamá!)
 Madre de Saori: ¡Hija mía!
 do animation_player.play("3_approach")
 do animation_player.animation_finished
-Madre de Saori: Lo lamento tanto hija, vámonos de aquí...
-Madre de Saori: Por ti hija, cambiaré, seré fuerte. 
+Madre de Saori: Lo lamento tanto hija... Nunca quise que llegara tan lejos, hice tantas cosas de las que me arrepiento... 
+Madre de Saori: Sé que has estado teniendo pesadillas, pero ahora estás a salvo hija, te lo prometo.
+Saori llora desconsoladamente en los brazos de su madre, sintiendo la calidez de un abrazo que esperaba desde hace un tiempo, ahora con la certeza de que nunca desaparecerá de nuevo.
 Madre de Saori: Vámonos a casa, mi niña.
-
+do animation_player.play("4_creditos")
+do animation_player.animation_finished
+Créditos:
+Artista - Mel Moyano y Leidy Casanova
+Narrativa - Mel Moyano
+Programadora - Natalia Ospinal
+Música - Leidy Casanova
+SFX - Adquiridos por open source hechos por idfjksjfkadjf, J1cr0wav3, kwahmah_02
 => END

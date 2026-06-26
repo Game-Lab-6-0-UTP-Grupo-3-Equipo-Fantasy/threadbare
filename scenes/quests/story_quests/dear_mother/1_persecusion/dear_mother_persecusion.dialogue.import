@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://k74n5ccw4b1v"
+path="res://.godot/imported/dear_mother_persecusion.dialogue-f08d63af18a441db42badc20c8e64844.tres"
+
+[deps]
+
+source_file="res://scenes/quests/story_quests/dear_mother/1_persecusion/dear_mother_persecusion.dialogue"
+dest_files=["res://.godot/imported/dear_mother_persecusion.dialogue-f08d63af18a441db42badc20c8e64844.tres"]
+
+[params]
+
+defaults=true

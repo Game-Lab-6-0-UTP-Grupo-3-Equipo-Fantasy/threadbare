@@ -1,0 +1,15 @@
+# SPDX-FileCopyrightText: The Threadbare Authors
+# SPDX-License-Identifier: MPL-2.0
+~ start
+do animation_player.play("1_walk_in")
+do animation_player.animation_finished
+Saori: (Mamá... ¿dónde estás? Te extraño.)
+do animation_player.play("2_scared_saori")
+do animation_player.animation_finished
+Saori: ¡!
+do animation_player.play("3_apparition_walkback")
+do animation_player.animation_finished
+Saori: (¡Debo salir de aquí!)
+do animation_player.play("4_change")
+do animation_player.animation_finished
+=> END

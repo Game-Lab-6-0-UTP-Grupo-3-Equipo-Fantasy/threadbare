@@ -461,7 +461,7 @@ unique_name_in_owner = true
 root_node = NodePath("../../PlayerRepel")
 libraries/ = SubResource("AnimationLibrary_1n58k")
 
-[node name="Camera2D" type="Camera2D" parent="." unique_id=2030007402]
+[node name="Camera2D" type="Camera2D" parent="." unique_id=2030007402 groups=["player"]]
 limit_enabled = false
 limit_left = 0
 limit_top = 0

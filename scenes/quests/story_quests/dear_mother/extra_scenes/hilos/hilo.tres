@@ -1,0 +1,39 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://cqh75jv27pof3"]
+
+[ext_resource type="Texture2D" uid="uid://ccyj28l01hwkx" path="res://scenes/quests/story_quests/dear_mother/extra_scenes/hilos/Hilo.png" id="1_w6yxe"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ln1x0"]
+atlas = ExtResource("1_w6yxe")
+region = Rect2(0, 32, 64, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b3wia"]
+atlas = ExtResource("1_w6yxe")
+region = Rect2(64, 32, 64, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xoqwg"]
+atlas = ExtResource("1_w6yxe")
+region = Rect2(128, 32, 64, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ophvj"]
+atlas = ExtResource("1_w6yxe")
+region = Rect2(128, 96, 64, 32)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ln1x0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b3wia")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xoqwg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ophvj")
+}],
+"loop": false,
+"name": &"filling",
+"speed": 5.0
+}]
