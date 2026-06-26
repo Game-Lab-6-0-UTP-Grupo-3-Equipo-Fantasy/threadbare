@@ -6,7 +6,7 @@
 [ext_resource type="Script" uid="uid://x1mxt6bmei2o" path="res://scenes/ui_elements/cinematic/cinematic.gd" id="10_2qa0r"]
 [ext_resource type="PackedScene" uid="uid://fuhl3l6gxq5k" path="res://scenes/game_elements/props/collectible_item/collectible_item.tscn" id="10_vfx3s"]
 [ext_resource type="PackedScene" uid="uid://dsxaowtju8oo8" path="res://scenes/quests/story_quests/dear_mother/extra_scenes/madre_saori/MadreSaori.tscn" id="11_2qa0r"]
-[ext_resource type="PackedScene" path="res://scenes/quests/story_quests/dear_mother/extra_scenes/Nube.tscn" id="11_833sc"]
+[ext_resource type="PackedScene" uid="uid://cwetq0ehgs5xa" path="res://scenes/quests/story_quests/dear_mother/extra_scenes/objetos/Nube.tscn" id="11_833sc"]
 [ext_resource type="Script" uid="uid://bgmwplmj3bfls" path="res://scenes/globals/game_state/inventory/inventory_item.gd" id="11_qu1ry"]
 [ext_resource type="Resource" uid="uid://do3iobd4sbx48" path="res://scenes/quests/story_quests/dear_mother/1_persecusion/dear_mother_sequence_puzzle.dialogue" id="12_833sc"]
 [ext_resource type="PackedScene" uid="uid://d0c6ti0aqpt5o" path="res://scenes/quests/story_quests/el_juguete_perdido/objects_components/tree_idle.tscn" id="12_qu1ry"]

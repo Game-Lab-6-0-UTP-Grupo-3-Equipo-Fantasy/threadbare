@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ovko02afeqfq"
-path="res://.godot/imported/nube.png-e961368f0878158fae6c1900ec7ca33e.ctex"
+uid="uid://dhask72s8kuhn"
+path="res://.godot/imported/black cat4.png-bd7aca0ff473dce801830931a3783a86.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/quests/story_quests/dear_mother/extra_scenes/nube.png"
-dest_files=["res://.godot/imported/nube.png-e961368f0878158fae6c1900ec7ca33e.ctex"]
+source_file="res://scenes/quests/story_quests/dear_mother/extra_scenes/gato/appear/black cat4.png"
+dest_files=["res://.godot/imported/black cat4.png-bd7aca0ff473dce801830931a3783a86.ctex"]
 
 [params]
 

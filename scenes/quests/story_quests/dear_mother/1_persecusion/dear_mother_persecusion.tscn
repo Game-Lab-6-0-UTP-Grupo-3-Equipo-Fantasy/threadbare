@@ -15,7 +15,7 @@
 [ext_resource type="PackedScene" uid="uid://cfcgrfvtn04yp" path="res://scenes/ui_elements/hud/hud.tscn" id="10_knmwe"]
 [ext_resource type="PackedScene" uid="uid://cknm6g5dn5r3y" path="res://scenes/quests/story_quests/dear_mother/extra_scenes/puerta/puerta.tscn" id="11_fj7ql"]
 [ext_resource type="Texture2D" uid="uid://bd2kaxff7ax8n" path="res://scenes/quests/story_quests/dear_mother/extra_scenes/saori/saori_repel/Saori repeler2.png" id="11_uagd5"]
-[ext_resource type="PackedScene" uid="uid://bowf433gj7xmk" path="res://scenes/quests/story_quests/dear_mother/extra_scenes/EntidadPersecusion.tscn" id="12_2pmn4"]
+[ext_resource type="PackedScene" uid="uid://bowf433gj7xmk" path="res://scenes/quests/story_quests/dear_mother/extra_scenes/monstruo/EntidadPersecusion.tscn" id="12_2pmn4"]
 [ext_resource type="Texture2D" uid="uid://drutsge3cbci2" path="res://scenes/quests/story_quests/dear_mother/extra_scenes/saori/saori_repel/Saori repeler3.png" id="12_7aamq"]
 [ext_resource type="Texture2D" uid="uid://ctwx8gghts62p" path="res://assets/third_party/tiny-swords/Deco/06.png" id="13_5gkku"]
 [ext_resource type="Texture2D" uid="uid://qtvanj5s6vt" path="res://scenes/quests/story_quests/dear_mother/extra_scenes/saori/saori_repel/Saori repeler4.png" id="13_q8sy1"]
