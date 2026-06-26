@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://dwgkg74u58fd7"]
+
+[ext_resource type="SpriteFrames" uid="uid://cqh75jv27pof3" path="res://scenes/quests/story_quests/dear_mother/extra_scenes/hilos/hilo.tres" id="1_admtl"]
+
+[node name="Hilo" type="Node" unique_id=133624432]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=675142156]
+sprite_frames = ExtResource("1_admtl")
+animation = &"filling"

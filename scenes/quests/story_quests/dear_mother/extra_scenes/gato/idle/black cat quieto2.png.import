@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://doo7j7udcyygo"
-path="res://.godot/imported/placeholder.png-e2f4875cb763a7d2a6a093f5de31ba56.ctex"
+uid="uid://dlhdwqlfh1php"
+path="res://.godot/imported/black cat quieto2.png-d6c6d6f22db78f1766df1e6f5e781e9c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/quests/story_quests/dear_mother/extra_scenes/placeholder.png"
-dest_files=["res://.godot/imported/placeholder.png-e2f4875cb763a7d2a6a093f5de31ba56.ctex"]
+source_file="res://scenes/quests/story_quests/dear_mother/extra_scenes/gato/idle/black cat quieto2.png"
+dest_files=["res://.godot/imported/black cat quieto2.png-d6c6d6f22db78f1766df1e6f5e781e9c.ctex"]
 
 [params]
 

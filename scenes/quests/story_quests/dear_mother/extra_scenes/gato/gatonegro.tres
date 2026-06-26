@@ -1,0 +1,75 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://clfjvl7k2hmm4"]
+
+[ext_resource type="Texture2D" uid="uid://dxx5o0emts60e" path="res://scenes/quests/story_quests/dear_mother/extra_scenes/gato/appear/black cat1.png" id="1_kfstk"]
+[ext_resource type="Texture2D" uid="uid://tyxcwda12e8s" path="res://scenes/quests/story_quests/dear_mother/extra_scenes/gato/appear/black cat2.png" id="2_qnxya"]
+[ext_resource type="Texture2D" uid="uid://uc5c04l1uwgl" path="res://scenes/quests/story_quests/dear_mother/extra_scenes/gato/appear/black cat3.png" id="3_ddtnh"]
+[ext_resource type="Texture2D" uid="uid://dhask72s8kuhn" path="res://scenes/quests/story_quests/dear_mother/extra_scenes/gato/appear/black cat4.png" id="4_xsnbq"]
+[ext_resource type="Texture2D" uid="uid://bpljeiqxwojgy" path="res://scenes/quests/story_quests/dear_mother/extra_scenes/gato/appear/black cat5.png" id="5_phyog"]
+[ext_resource type="Texture2D" uid="uid://jfi5dklwxfss" path="res://scenes/quests/story_quests/dear_mother/extra_scenes/gato/appear/black cat6.png" id="6_s8t65"]
+[ext_resource type="Texture2D" uid="uid://ctm26ehhscxc2" path="res://scenes/quests/story_quests/dear_mother/extra_scenes/gato/appear/black cat7.png" id="7_ivgjc"]
+[ext_resource type="Texture2D" uid="uid://dfwhsktbeki50" path="res://scenes/quests/story_quests/dear_mother/extra_scenes/gato/appear/black cat8.png" id="8_bd8vt"]
+[ext_resource type="Texture2D" uid="uid://d3ioxbauy8w46" path="res://scenes/quests/story_quests/dear_mother/extra_scenes/gato/appear/black cat9.png" id="9_o6cyo"]
+[ext_resource type="Texture2D" uid="uid://bmdx3o3vw81xr" path="res://scenes/quests/story_quests/dear_mother/extra_scenes/gato/idle/black cat quieto1.png" id="10_5hgog"]
+[ext_resource type="Texture2D" uid="uid://dlhdwqlfh1php" path="res://scenes/quests/story_quests/dear_mother/extra_scenes/gato/idle/black cat quieto2.png" id="11_hlw2r"]
+[ext_resource type="Texture2D" uid="uid://7ly2wroqnkup" path="res://scenes/quests/story_quests/dear_mother/extra_scenes/gato/idle/black cat quieto3.png" id="12_cuo3i"]
+[ext_resource type="Texture2D" uid="uid://cldf0g8t5hnw1" path="res://scenes/quests/story_quests/dear_mother/extra_scenes/gato/idle/black cat quieto4.png" id="13_rhe57"]
+[ext_resource type="Texture2D" uid="uid://duds782jcsvrg" path="res://scenes/quests/story_quests/dear_mother/extra_scenes/gato/idle/black cat quieto5.png" id="14_pp0a5"]
+[ext_resource type="Texture2D" uid="uid://d1r2qtojn3x33" path="res://scenes/quests/story_quests/dear_mother/extra_scenes/gato/idle/black cat quieto6.png" id="15_fo53w"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_kfstk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_qnxya")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_ddtnh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_xsnbq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_phyog")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_s8t65")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_ivgjc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_bd8vt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_o6cyo")
+}],
+"loop": false,
+"name": &"appear",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_5hgog")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_hlw2r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_cuo3i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_rhe57")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_pp0a5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_fo53w")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]

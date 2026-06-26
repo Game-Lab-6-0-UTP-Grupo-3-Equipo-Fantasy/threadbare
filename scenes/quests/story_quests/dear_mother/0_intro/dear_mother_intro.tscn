@@ -6,11 +6,12 @@
 [ext_resource type="Script" uid="uid://x1mxt6bmei2o" path="res://scenes/ui_elements/cinematic/cinematic.gd" id="10_2qa0r"]
 [ext_resource type="PackedScene" uid="uid://fuhl3l6gxq5k" path="res://scenes/game_elements/props/collectible_item/collectible_item.tscn" id="10_vfx3s"]
 [ext_resource type="PackedScene" uid="uid://dsxaowtju8oo8" path="res://scenes/quests/story_quests/dear_mother/extra_scenes/madre_saori/MadreSaori.tscn" id="11_2qa0r"]
-[ext_resource type="PackedScene" path="res://scenes/quests/story_quests/dear_mother/extra_scenes/Nube.tscn" id="11_833sc"]
+[ext_resource type="PackedScene" uid="uid://cwetq0ehgs5xa" path="res://scenes/quests/story_quests/dear_mother/extra_scenes/objetos/Nube.tscn" id="11_833sc"]
 [ext_resource type="Script" uid="uid://bgmwplmj3bfls" path="res://scenes/globals/game_state/inventory/inventory_item.gd" id="11_qu1ry"]
 [ext_resource type="Resource" uid="uid://do3iobd4sbx48" path="res://scenes/quests/story_quests/dear_mother/1_persecusion/dear_mother_sequence_puzzle.dialogue" id="12_833sc"]
 [ext_resource type="PackedScene" uid="uid://d0c6ti0aqpt5o" path="res://scenes/quests/story_quests/el_juguete_perdido/objects_components/tree_idle.tscn" id="12_qu1ry"]
 [ext_resource type="Resource" uid="uid://c61i5dm76pad0" path="res://scenes/quests/story_quests/dear_mother/0_intro/intro_components/dear_mother_intro.dialogue" id="12_vfx3s"]
+[ext_resource type="AudioStream" uid="uid://cugu6pgq662ur" path="res://scenes/quests/story_quests/dear_mother/extra_music/dulce_gamelab2.mp3" id="13_833sc"]
 [ext_resource type="PackedScene" uid="uid://cw0fe6cc4ly8p" path="res://scenes/quests/story_quests/dear_mother/extra_scenes/pino/Pino.tscn" id="13_qu1ry"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_vryqs"]
@@ -297,7 +298,7 @@ tile_set = ExtResource("1_q7g67")
 metadata/_edit_lock_ = true
 
 [node name="Sand" type="TileMapLayer" parent="TileMapLayers" unique_id=874671513]
-tile_map_data = PackedByteArray("AAD4/wYAAQAFAAMAAQD5/wYAAQAGAAMAAQD6/wYAAQAGAAMAAQD7/wYAAQAGAAMAAQD8/wYAAQAGAAMAAQD9/wYAAQAGAAMAAQD+/wYAAQAGAAMAAQD//wYAAQAGAAMAAQAAAAYAAQAGAAMAAQABAAYAAQAGAAMAAQACAAYAAQAGAAMAAQADAAYAAQAGAAMAAQAEAAYAAQAGAAMAAQAFAAYAAQAGAAMAAQAGAAYAAQAGAAMAAQAHAAYAAQAGAAMAAQAIAAYAAQAGAAMAAQAJAAYAAQAGAAMAAQAKAAYAAQAGAAMAAQALAAYAAQAGAAMAAQAMAAYAAQAGAAMAAQANAAYAAQAGAAMAAQAOAAYAAQAGAAMAAQAPAAYAAQAGAAMAAQAQAAYAAQAGAAMAAQARAAYAAQAGAAMAAQASAAYAAQAGAAMAAQATAAYAAQAGAAMAAQAUAAYAAQAGAAMAAQAVAAYAAQAGAAMAAQAWAAYAAQAGAAMAAQAXAAYAAQAGAAMAAQAYAAYAAQAGAAMAAQAZAAYAAQAGAAMAAQAaAAYAAQAGAAMAAQAbAAYAAQAGAAMAAQAcAAYAAQAGAAMAAQAdAAYAAQAGAAMAAQAeAAYAAQAGAAMAAQAfAAYAAQAGAAMAAQAgAAYAAQAGAAMAAQAhAAYAAQAGAAMAAQAiAAYAAQAGAAMAAQAjAAYAAQAGAAMAAQAkAAYAAQAGAAMAAQAlAAYAAQAGAAMAAQAmAAYAAQAGAAMAAQAnAAYAAQAHAAMAAQA=")
+tile_map_data = PackedByteArray("AAD4/wYABAAFAAMAAQD5/wYABAAGAAMAAQD6/wYABAAGAAMAAQD7/wYABAAGAAMAAQD8/wYABAAGAAMAAQD9/wYABAAGAAMAAQD+/wYABAAGAAMAAQD//wYABAAGAAMAAQAAAAYABAAGAAMAAQABAAYABAAGAAMAAQACAAYABAAGAAMAAQADAAYABAAGAAMAAQAEAAYABAAGAAMAAQAFAAYABAAGAAMAAQAGAAYABAAGAAMAAQAHAAYABAAGAAMAAQAIAAYABAAGAAMAAQAJAAYABAAGAAMAAQAKAAYABAAGAAMAAQALAAYABAAGAAMAAQAMAAYABAAGAAMAAQANAAYABAAGAAMAAQAOAAYABAAGAAMAAQAPAAYABAAGAAMAAQAQAAYABAAGAAMAAQARAAYABAAGAAMAAQASAAYABAAGAAMAAQATAAYABAAGAAMAAQAUAAYABAAGAAMAAQAVAAYABAAGAAMAAQAWAAYABAAGAAMAAQAXAAYABAAGAAMAAQAYAAYABAAGAAMAAQAZAAYABAAGAAMAAQAaAAYABAAGAAMAAQAbAAYABAAGAAMAAQAcAAYABAAGAAMAAQAdAAYABAAGAAMAAQAeAAYABAAGAAMAAQAfAAYABAAGAAMAAQAgAAYABAAGAAMAAQAhAAYABAAGAAMAAQAiAAYABAAGAAMAAQAjAAYABAAGAAMAAQAkAAYABAAGAAMAAQAlAAYABAAGAAMAAQAmAAYABAAGAAMAAQAnAAYABAAHAAMAAQA=")
 tile_set = ExtResource("1_q7g67")
 
 [node name="OnTheGround" type="Node2D" parent="." unique_id=836096441]
@@ -570,6 +571,12 @@ script = ExtResource("10_2qa0r")
 dialogue = ExtResource("12_vfx3s")
 animation_player = NodePath("../OnTheGround/DirectorCinematica")
 metadata/_custom_type_script = "uid://x1mxt6bmei2o"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=683725095]
+stream = ExtResource("13_833sc")
+volume_db = -5.0
+autoplay = true
+parameters/looping = true
 
 [editable path="OnTheGround/MadreSaori"]
 [editable path="OnTheGround/Saori"]

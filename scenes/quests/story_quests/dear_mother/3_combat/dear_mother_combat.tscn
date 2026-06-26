@@ -1,7 +1,7 @@
 [gd_scene format=4 uid="uid://bv08t775g112c"]
 
 [ext_resource type="Script" uid="uid://pk3ucq7e2eah" path="res://scenes/game_logic/player_mode.gd" id="1_tcaov"]
-[ext_resource type="Script" path="res://scenes/quests/story_quests/dear_mother/extra_scripts/dear_mother_combat.gd" id="1_wktfi"]
+[ext_resource type="Script" uid="uid://ci3aibvrk6ak3" path="res://scenes/quests/story_quests/dear_mother/extra_scripts/dear_mother_combat.gd" id="1_wktfi"]
 [ext_resource type="Script" uid="uid://x1mxt6bmei2o" path="res://scenes/ui_elements/cinematic/cinematic.gd" id="2_gjwyc"]
 [ext_resource type="Resource" uid="uid://ddbaqxasxl1ja" path="res://scenes/quests/story_quests/dear_mother/3_combat/combat_components/dear_mother_combat.dialogue" id="3_y38hj"]
 [ext_resource type="Script" uid="uid://cp54mgi54nywo" path="res://scenes/game_logic/fill_game_logic.gd" id="4_5pxk7"]
@@ -15,10 +15,11 @@
 [ext_resource type="SpriteFrames" uid="uid://bquxs513bkvys" path="res://scenes/quests/story_quests/dear_mother/extra_scenes/monstruo/monstruo.tres" id="11_vk7ks"]
 [ext_resource type="PackedScene" uid="uid://c40jksrxvp1g1" path="res://scenes/quests/story_quests/dear_mother/3_combat/combat_components/dear_mother_projectile.tscn" id="12_qgnua"]
 [ext_resource type="PackedScene" uid="uid://y8ha8abfyap2" path="res://scenes/game_elements/props/filling_barrel/filling_barrel.tscn" id="13_vokn4"]
-[ext_resource type="SpriteFrames" uid="uid://bistc0115w5u2" path="res://scenes/quests/story_quests/dear_mother/3_combat/combat_components/dear_mother_target_spriteframes.tres" id="14_ttb70"]
+[ext_resource type="SpriteFrames" uid="uid://cqh75jv27pof3" path="res://scenes/quests/story_quests/dear_mother/extra_scenes/hilos/hilo.tres" id="17_0lnq8"]
 [ext_resource type="PackedScene" uid="uid://dmevaymmt6wco" path="res://scenes/game_elements/props/powerup/powerup.tscn" id="17_lsn22"]
 [ext_resource type="PackedScene" uid="uid://cfcgrfvtn04yp" path="res://scenes/ui_elements/hud/hud.tscn" id="18_iggd8"]
 [ext_resource type="PackedScene" uid="uid://cknm6g5dn5r3y" path="res://scenes/quests/story_quests/dear_mother/extra_scenes/puerta/puerta.tscn" id="18_scldq"]
+[ext_resource type="AudioStream" uid="uid://b2fxogtpqpr6v" path="res://scenes/quests/story_quests/dear_mother/extra_music/terror1_gamelab.mp3" id="20_0lnq8"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_3vyb7"]
 radius = 32.0
@@ -272,6 +273,7 @@ metadata/_custom_type_script = "uid://x1mxt6bmei2o"
 
 [node name="FillGameLogic" type="Node" parent="." unique_id=1828019770]
 script = ExtResource("4_5pxk7")
+barrels_to_win = 4
 metadata/_custom_type_script = "uid://cp54mgi54nywo"
 
 [node name="TileMapLayers" type="Node2D" parent="." unique_id=738016104]
@@ -315,7 +317,7 @@ script = ExtResource("10_3ve5y")
 
 [node name="ThrowingNPC" type="CharacterBody2D" parent="OnTheGround" unique_id=2065424633 groups=["throwing_enemy"]]
 unique_name_in_owner = true
-position = Vector2(484, 417)
+position = Vector2(484, 435)
 collision_layer = 2
 collision_mask = 17
 motion_mode = 1
@@ -327,7 +329,7 @@ projectile_scene = ExtResource("12_qgnua")
 projectile_speed = 70.0
 projectile_follows_player = true
 walking_time = 1.0
-walking_range = 310.0
+walking_range = 71.0
 walking_speed = 100.0
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="OnTheGround/ThrowingNPC" unique_id=1865971466]
@@ -381,28 +383,90 @@ max_distance = 1000.0
 bus = &"SFX"
 
 [node name="Target3" parent="OnTheGround" unique_id=1832726000 instance=ExtResource("13_vokn4")]
-position = Vector2(950, 90)
-sprite_frames = ExtResource("14_ttb70")
+z_index = -1
+y_sort_enabled = true
+position = Vector2(790, 400)
+scale = Vector2(8.2, 8.2)
+sprite_frames = ExtResource("17_0lnq8")
 label = ""
-color = Color(1, 1, 1, 1)
+color = Color(0.5499, 0.0002465257, 0.55885226, 1)
+
+[node name="AnimatedSprite2D" parent="OnTheGround/Target3" index="0" unique_id=1489807708]
+modulate = Color(0.5499, 0.0002465257, 0.55885226, 1)
+sprite_frames = ExtResource("17_0lnq8")
+flip_v = true
+
+[node name="CollisionShape2D" parent="OnTheGround/Target3/HitBox" parent_id_path=PackedInt32Array(1832726000, 1847617565) index="0" unique_id=426954511]
+position = Vector2(25.999996, -14.124996)
+scale = Vector2(0.2, 0.2)
+
+[node name="CollisionShape2D" parent="OnTheGround/Target3" index="3" unique_id=320042935]
+position = Vector2(27.999996, -32.749996)
+scale = Vector2(0.2, 0.2)
 
 [node name="Target5" parent="OnTheGround" unique_id=1861594411 instance=ExtResource("13_vokn4")]
-position = Vector2(950, 671)
-sprite_frames = ExtResource("14_ttb70")
+z_index = -1
+y_sort_enabled = true
+position = Vector2(745, 744)
+scale = Vector2(8.2, 8.2)
+sprite_frames = ExtResource("17_0lnq8")
 label = ""
-color = Color(1, 1, 1, 1)
+color = Color(0.5499, 0.0002465257, 0.55885226, 1)
+
+[node name="AnimatedSprite2D" parent="OnTheGround/Target5" index="0" unique_id=1489807708]
+modulate = Color(0.5499, 0.0002465257, 0.55885226, 1)
+sprite_frames = ExtResource("17_0lnq8")
+
+[node name="CollisionShape2D" parent="OnTheGround/Target5/HitBox" parent_id_path=PackedInt32Array(1861594411, 1847617565) index="0" unique_id=426954511]
+position = Vector2(29.999996, 7.874998)
+scale = Vector2(0.2, 0.2)
+
+[node name="CollisionShape2D" parent="OnTheGround/Target5" index="3" unique_id=320042935]
+position = Vector2(31.999998, -7.875002)
+scale = Vector2(0.2, 0.2)
 
 [node name="Target4" parent="OnTheGround" unique_id=857122250 instance=ExtResource("13_vokn4")]
-position = Vector2(31, 90)
-sprite_frames = ExtResource("14_ttb70")
+z_index = -1
+y_sort_enabled = true
+position = Vector2(191, 390)
+scale = Vector2(8.2, 8.2)
+sprite_frames = ExtResource("17_0lnq8")
 label = ""
-color = Color(1, 1, 1, 1)
+color = Color(0.5499, 0.0002465257, 0.55885226, 1)
+
+[node name="AnimatedSprite2D" parent="OnTheGround/Target4" index="0" unique_id=1489807708]
+modulate = Color(0.5499, 0.0002465257, 0.55885226, 1)
+sprite_frames = ExtResource("17_0lnq8")
+
+[node name="CollisionShape2D" parent="OnTheGround/Target4/HitBox" parent_id_path=PackedInt32Array(857122250, 1847617565) index="0" unique_id=426954511]
+position = Vector2(-31.749996, -13.499996)
+scale = Vector2(0.2, 0.2)
+
+[node name="CollisionShape2D" parent="OnTheGround/Target4" index="3" unique_id=320042935]
+position = Vector2(-29.749996, -31.499996)
+scale = Vector2(0.2, 0.2)
 
 [node name="Target6" parent="OnTheGround" unique_id=919278201 instance=ExtResource("13_vokn4")]
-position = Vector2(31, 682)
-sprite_frames = ExtResource("14_ttb70")
+z_index = -1
+y_sort_enabled = true
+position = Vector2(166, 769)
+scale = Vector2(8.2, 8.2)
+sprite_frames = ExtResource("17_0lnq8")
 label = ""
-color = Color(1, 1, 1, 1)
+color = Color(0.5499, 0.0002465257, 0.55885226, 1)
+
+[node name="AnimatedSprite2D" parent="OnTheGround/Target6" index="0" unique_id=1489807708]
+modulate = Color(0.5499, 0.0002465257, 0.55885226, 1)
+sprite_frames = ExtResource("17_0lnq8")
+flip_v = true
+
+[node name="CollisionShape2D" parent="OnTheGround/Target6/HitBox" parent_id_path=PackedInt32Array(919278201, 1847617565) index="0" unique_id=426954511]
+position = Vector2(-28.624996, 4.749999)
+scale = Vector2(0.2, 0.2)
+
+[node name="CollisionShape2D" parent="OnTheGround/Target6" index="3" unique_id=320042935]
+position = Vector2(-28.749996, -11)
+scale = Vector2(0.2, 0.2)
 
 [node name="RepelPowerup" parent="OnTheGround" unique_id=1795462717 instance=ExtResource("17_lsn22")]
 position = Vector2(-216, 704)
@@ -416,8 +480,18 @@ next_scene = "uid://7lyvjrlgowg0"
 
 [node name="HUD" parent="." unique_id=1216951978 instance=ExtResource("18_iggd8")]
 
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1640241924]
+stream = ExtResource("20_0lnq8")
+volume_db = -17.0
+autoplay = true
+parameters/looping = true
+
 [connection signal="cinematic_finished" from="Cinematic" to="FillGameLogic" method="start"]
 [connection signal="goal_reached" from="FillGameLogic" to="." method="mostrar_puerta"]
 [connection signal="body_entered" from="OnTheGround/Player/PlayerHarm/HitBox" to="OnTheGround/Player/DetectorProyectiles" method="_on_hit_box_body_entered"]
 
 [editable path="OnTheGround/Player"]
+[editable path="OnTheGround/Target3"]
+[editable path="OnTheGround/Target5"]
+[editable path="OnTheGround/Target4"]
+[editable path="OnTheGround/Target6"]
